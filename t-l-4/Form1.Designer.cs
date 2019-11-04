@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.вносСредствToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.валютаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.долларыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.евроToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.рублиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Exit_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Contibution_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Currency_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Currency_Dollar_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Currency_Euro_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Rub_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.общийСчетБанкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
@@ -56,58 +56,58 @@
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.выходToolStripMenuItem,
-            this.вносСредствToolStripMenuItem,
+            this.Exit_ToolStripMenuItem,
+            this.Contibution_ToolStripMenuItem,
             this.общийСчетБанкаToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(785, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(600, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // выходToolStripMenuItem
+            // Exit_ToolStripMenuItem
             // 
-            this.выходToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.выходToolStripMenuItem.Text = "Выход";
-            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
+            this.Exit_ToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.Exit_ToolStripMenuItem.Name = "Exit_ToolStripMenuItem";
+            this.Exit_ToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.Exit_ToolStripMenuItem.Text = "Выход";
+            this.Exit_ToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
-            // вносСредствToolStripMenuItem
+            // Contibution_ToolStripMenuItem
             // 
-            this.вносСредствToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.валютаToolStripMenuItem,
-            this.рублиToolStripMenuItem});
-            this.вносСредствToolStripMenuItem.Name = "вносСредствToolStripMenuItem";
-            this.вносСредствToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
-            this.вносСредствToolStripMenuItem.Text = "Внос средств";
+            this.Contibution_ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Currency_ToolStripMenuItem,
+            this.Rub_ToolStripMenuItem});
+            this.Contibution_ToolStripMenuItem.Name = "Contibution_ToolStripMenuItem";
+            this.Contibution_ToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
+            this.Contibution_ToolStripMenuItem.Text = "Внос средств";
             // 
-            // валютаToolStripMenuItem
+            // Currency_ToolStripMenuItem
             // 
-            this.валютаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.долларыToolStripMenuItem,
-            this.евроToolStripMenuItem});
-            this.валютаToolStripMenuItem.Name = "валютаToolStripMenuItem";
-            this.валютаToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
-            this.валютаToolStripMenuItem.Text = "Валюта";
+            this.Currency_ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Currency_Dollar_ToolStripMenuItem,
+            this.Currency_Euro_ToolStripMenuItem});
+            this.Currency_ToolStripMenuItem.Name = "Currency_ToolStripMenuItem";
+            this.Currency_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Currency_ToolStripMenuItem.Text = "Валюта";
             // 
-            // долларыToolStripMenuItem
+            // Currency_Dollar_ToolStripMenuItem
             // 
-            this.долларыToolStripMenuItem.Name = "долларыToolStripMenuItem";
-            this.долларыToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
-            this.долларыToolStripMenuItem.Text = "Доллары";
+            this.Currency_Dollar_ToolStripMenuItem.Name = "Currency_Dollar_ToolStripMenuItem";
+            this.Currency_Dollar_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Currency_Dollar_ToolStripMenuItem.Text = "Доллары";
             // 
-            // евроToolStripMenuItem
+            // Currency_Euro_ToolStripMenuItem
             // 
-            this.евроToolStripMenuItem.Name = "евроToolStripMenuItem";
-            this.евроToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
-            this.евроToolStripMenuItem.Text = "Евро";
+            this.Currency_Euro_ToolStripMenuItem.Name = "Currency_Euro_ToolStripMenuItem";
+            this.Currency_Euro_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Currency_Euro_ToolStripMenuItem.Text = "Евро";
             // 
-            // рублиToolStripMenuItem
+            // Rub_ToolStripMenuItem
             // 
-            this.рублиToolStripMenuItem.Name = "рублиToolStripMenuItem";
-            this.рублиToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
-            this.рублиToolStripMenuItem.Text = "Рубли";
+            this.Rub_ToolStripMenuItem.Name = "Rub_ToolStripMenuItem";
+            this.Rub_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Rub_ToolStripMenuItem.Text = "Рубли";
             // 
             // общийСчетБанкаToolStripMenuItem
             // 
@@ -124,7 +124,7 @@
             this.toolStripButton4});
             this.toolStrip2.Location = new System.Drawing.Point(0, 24);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(785, 25);
+            this.toolStrip2.Size = new System.Drawing.Size(600, 25);
             this.toolStrip2.TabIndex = 3;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -204,7 +204,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(785, 440);
+            this.ClientSize = new System.Drawing.Size(600, 440);
             this.Controls.Add(this.toolStrip2);
             this.Controls.Add(this.dataGridView_Dollar);
             this.Controls.Add(this.menuStrip1);
@@ -226,14 +226,14 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem вносСредствToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Exit_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Contibution_ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem общийСчетБанкаToolStripMenuItem;
         private System.Windows.Forms.ToolStrip toolStrip2;
-        private System.Windows.Forms.ToolStripMenuItem валютаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem долларыToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem евроToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem рублиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Currency_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Currency_Dollar_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Currency_Euro_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Rub_ToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
