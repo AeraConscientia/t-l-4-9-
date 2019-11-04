@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -17,13 +17,15 @@ namespace t_l_4
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        }
+
+        ArrayList Base = new ArrayList();
+
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
         }
     }
 }
