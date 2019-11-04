@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace l_3__6_
+namespace t_l_4
 {
     class Rub : Account
     {
@@ -14,7 +14,7 @@ namespace l_3__6_
             this.rubs = rubs;
         }
 
-        public double Rubss
+        public double Rubs
         {
             set
             {

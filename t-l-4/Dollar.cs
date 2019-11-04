@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace l_3__6_
+namespace t_l_4
 {
     class Dollar : Account
     {
