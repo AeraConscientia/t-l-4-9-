@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace t_l_4
@@ -26,6 +20,12 @@ namespace t_l_4
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+            Currency currency = new Currency();
+            currency.ShowDialog();
         }
     }
 }

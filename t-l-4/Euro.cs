@@ -9,17 +9,22 @@ namespace l_3__6_
     class Euro : Account
     {
         private static double Kurs = 71.5;
-        private double euros = 0;
 
         public Euro(string surname, double euros) : base(surname)
         {
             this.euros = euros;
         }
-        public override double Number()
+        public double Euros
         {
-            return euros;
+            set
+            {
+                euros = value;
+            }
+            get
+            {
+                return euros;
+            }
         }
-
 
         public override double To_Rub()
         {

@@ -9,18 +9,18 @@ namespace l_3__6_
     class Dollar : Account
     {
         private static double Kurs = 64;
-        private double dollars = 0;
+
 
         public double Dollars
         {
+            set
+            {
+                dollars = value;
+            }
             get
             {
                 return dollars;
             }
-        }
-        public override double Number()
-        {
-            return dollars;
         }
 
         public Dollar(string surname, double dollars) : base(surname)

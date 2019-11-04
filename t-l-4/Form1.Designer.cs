@@ -47,6 +47,8 @@
             this.Column_Euro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_Rub = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_Gold = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_All_int_Rub = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             this.toolStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Dollar)).BeginInit();
@@ -61,7 +63,7 @@
             this.общийСчетБанкаToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(600, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(675, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -121,10 +123,11 @@
             this.toolStripButton1,
             this.toolStripButton2,
             this.toolStripButton3,
-            this.toolStripButton4});
+            this.toolStripButton4,
+            this.toolStripButton5});
             this.toolStrip2.Location = new System.Drawing.Point(0, 24);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(600, 25);
+            this.toolStrip2.Size = new System.Drawing.Size(675, 25);
             this.toolStrip2.TabIndex = 3;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -173,10 +176,11 @@
             this.Column_Dollar,
             this.Column_Euro,
             this.Column_Rub,
-            this.Column_Gold});
+            this.Column_Gold,
+            this.Column_All_int_Rub});
             this.dataGridView_Dollar.Location = new System.Drawing.Point(23, 71);
             this.dataGridView_Dollar.Name = "dataGridView_Dollar";
-            this.dataGridView_Dollar.Size = new System.Drawing.Size(553, 344);
+            this.dataGridView_Dollar.Size = new System.Drawing.Size(626, 344);
             this.dataGridView_Dollar.TabIndex = 2;
             // 
             // Column_Dollar
@@ -199,12 +203,27 @@
             this.Column_Gold.HeaderText = "Gold";
             this.Column_Gold.Name = "Column_Gold";
             // 
+            // Column_All_int_Rub
+            // 
+            this.Column_All_int_Rub.HeaderText = "Всего в рублях";
+            this.Column_All_int_Rub.Name = "Column_All_int_Rub";
+            // 
+            // toolStripButton5
+            // 
+            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
+            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton5.Text = "toolStripButton5";
+            this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(600, 440);
+            this.ClientSize = new System.Drawing.Size(675, 440);
             this.Controls.Add(this.toolStrip2);
             this.Controls.Add(this.dataGridView_Dollar);
             this.Controls.Add(this.menuStrip1);
@@ -243,6 +262,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Euro;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Rub;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Gold;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_All_int_Rub;
+        private System.Windows.Forms.ToolStripButton toolStripButton5;
     }
 }
 
