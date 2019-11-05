@@ -22,6 +22,7 @@ namespace t_l_4
             this.dollars = dollars;
             this.euros = euros;
             this.rubs = rubs;
+            this.golds = golds;
         }
     }
 }
