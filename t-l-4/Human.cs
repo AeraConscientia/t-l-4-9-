@@ -8,9 +8,9 @@ namespace t_l_4
 {
     class Human
     {
-        string surname;
+        public string surname;
 
-        double
+        public double
             dollars,
             euros,
             rubs,

@@ -50,6 +50,7 @@
             this.Column_Rub = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_Gold = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_All_int_Rub = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gold_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Total)).BeginInit();
@@ -89,29 +90,30 @@
             // 
             this.Currency_ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Currency_Dollar_ToolStripMenuItem,
-            this.Currency_Euro_ToolStripMenuItem});
+            this.Currency_Euro_ToolStripMenuItem,
+            this.Gold_ToolStripMenuItem});
             this.Currency_ToolStripMenuItem.Name = "Currency_ToolStripMenuItem";
-            this.Currency_ToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.Currency_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Currency_ToolStripMenuItem.Text = "Валюта";
             // 
             // Currency_Dollar_ToolStripMenuItem
             // 
             this.Currency_Dollar_ToolStripMenuItem.Name = "Currency_Dollar_ToolStripMenuItem";
-            this.Currency_Dollar_ToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.Currency_Dollar_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Currency_Dollar_ToolStripMenuItem.Text = "Доллары";
             this.Currency_Dollar_ToolStripMenuItem.Click += new System.EventHandler(this.Currency_Dollar_ToolStripMenuItem_Click);
             // 
             // Currency_Euro_ToolStripMenuItem
             // 
             this.Currency_Euro_ToolStripMenuItem.Name = "Currency_Euro_ToolStripMenuItem";
-            this.Currency_Euro_ToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.Currency_Euro_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Currency_Euro_ToolStripMenuItem.Text = "Евро";
             this.Currency_Euro_ToolStripMenuItem.Click += new System.EventHandler(this.Currency_Euro_ToolStripMenuItem_Click);
             // 
             // Rub_ToolStripMenuItem
             // 
             this.Rub_ToolStripMenuItem.Name = "Rub_ToolStripMenuItem";
-            this.Rub_ToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.Rub_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Rub_ToolStripMenuItem.Text = "Рубли";
             this.Rub_ToolStripMenuItem.Click += new System.EventHandler(this.Rub_ToolStripMenuItem_Click);
             // 
@@ -173,6 +175,7 @@
             this.toolStripButton_Gold.Name = "toolStripButton_Gold";
             this.toolStripButton_Gold.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton_Gold.Text = "toolStripButton4";
+            this.toolStripButton_Gold.Click += new System.EventHandler(this.toolStripButton_Gold_Click);
             // 
             // toolStripButton_Currency
             // 
@@ -231,6 +234,13 @@
             this.Column_All_int_Rub.HeaderText = "Всего в рублях";
             this.Column_All_int_Rub.Name = "Column_All_int_Rub";
             // 
+            // Gold_ToolStripMenuItem
+            // 
+            this.Gold_ToolStripMenuItem.Name = "Gold_ToolStripMenuItem";
+            this.Gold_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Gold_ToolStripMenuItem.Text = "Золото";
+            this.Gold_ToolStripMenuItem.Click += new System.EventHandler(this.Gold_ToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -278,6 +288,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Rub;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Gold;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_All_int_Rub;
+        private System.Windows.Forms.ToolStripMenuItem Gold_ToolStripMenuItem;
     }
 }
 
