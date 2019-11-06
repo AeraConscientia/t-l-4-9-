@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace t_l_4
@@ -36,8 +29,8 @@ namespace t_l_4
             textBox_Euro.Text   = "";
             textBox_Gold.Text   = "";
             checkBox_Dollar.Checked = false;
-            checkBox_Euro.Checked = false;
-            checkBox_Gold.Checked = false;
+            checkBox_Euro.Checked   = false;
+            checkBox_Gold.Checked   = false;
         }
 
         private void checkBox_Dollar_CheckedChanged(object sender, EventArgs e)
@@ -57,18 +50,6 @@ namespace t_l_4
 
         private void button_Add_Click(object sender, EventArgs e)
         {
-            /*            if (checkBox_Euro.Checked)
-                        {
-                            euros = double.Parse(textBox_Euro.Text);
-                        }
-                        if (checkBox_Dollar.Checked)
-                        {
-                            dollars = double.Parse(textBox_Dollar.Text);
-                        }
-                        if (checkBox_Gold.Checked)
-                        {
-                            golds = double.Parse(textBox_Gold.Text);
-                        }*/
         }
     }
 }

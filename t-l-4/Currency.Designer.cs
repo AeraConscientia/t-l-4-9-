@@ -37,7 +37,7 @@
             this.checkBox_Dollar = new System.Windows.Forms.CheckBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.очиститьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Exit_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.listBox_Sur = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
@@ -121,7 +121,7 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.очиститьToolStripMenuItem,
-            this.выходToolStripMenuItem});
+            this.Exit_ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(561, 24);
@@ -135,13 +135,13 @@
             this.очиститьToolStripMenuItem.Text = "Очистить";
             this.очиститьToolStripMenuItem.Click += new System.EventHandler(this.очиститьToolStripMenuItem_Click);
             // 
-            // выходToolStripMenuItem
+            // Exit_ToolStripMenuItem
             // 
-            this.выходToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.выходToolStripMenuItem.Text = "Выход";
-            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
+            this.Exit_ToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.Exit_ToolStripMenuItem.Name = "Exit_ToolStripMenuItem";
+            this.Exit_ToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
+            this.Exit_ToolStripMenuItem.Text = "Внести и закрыть";
+            this.Exit_ToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
             // groupBox2
             // 
@@ -195,7 +195,7 @@
         private System.Windows.Forms.CheckBox checkBox_Dollar;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem очиститьToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Exit_ToolStripMenuItem;
         public System.Windows.Forms.TextBox textBox_Gold;
         public System.Windows.Forms.TextBox textBox_Euro;
         public System.Windows.Forms.TextBox textBox_Dollar;

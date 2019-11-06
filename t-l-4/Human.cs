@@ -14,15 +14,17 @@ namespace t_l_4
             dollars,
             euros,
             rubs,
-            golds;
-
-        public Human(string surname, double dollars, double euros, double rubs, double golds)
+            golds,
+            all_in_rubs;
+        Account account;
+        public Human(string surname, double dollars, double euros, double rubs, double golds, double all_in_rubs)
         {
             this.surname = surname;
             this.dollars = dollars;
             this.euros = euros;
             this.rubs = rubs;
             this.golds = golds;
+            this.all_in_rubs = all_in_rubs;
         }
     }
 }

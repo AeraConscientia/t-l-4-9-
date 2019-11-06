@@ -75,7 +75,7 @@
             this.Exit_ToolStripMenuItem.Name = "Exit_ToolStripMenuItem";
             this.Exit_ToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.Exit_ToolStripMenuItem.Text = "Выход";
-            this.Exit_ToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
+            this.Exit_ToolStripMenuItem.Click += new System.EventHandler(this.Exit_ToolStripMenuItem_Click);
             // 
             // Contibution_ToolStripMenuItem
             // 

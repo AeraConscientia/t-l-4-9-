@@ -13,6 +13,7 @@ namespace t_l_4
         protected double euros = 0;
         protected double rubs = 0;
         protected double golds = 0;
+        protected double all_in_rubs = 0;
 
         public Account(string surname)
         {
