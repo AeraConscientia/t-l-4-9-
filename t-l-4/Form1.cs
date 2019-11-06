@@ -48,7 +48,7 @@ namespace t_l_4
                 Table_Insert(_Surname, 0, _euros, 0, 0);
             }
         }
-
+               
         public void Rub_Input()
         {
         Rubs_Single R_single = new Rubs_Single();
