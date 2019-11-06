@@ -25,9 +25,9 @@ namespace t_l_4
 
         private void очиститьToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox_Dollar.Text = "";
-            textBox_Euro.Text   = "";
-            textBox_Gold.Text   = "";
+            textBox_Dollar.Text = "0";
+            textBox_Euro.Text   = "0";
+            textBox_Gold.Text   = "0";
             checkBox_Dollar.Checked = false;
             checkBox_Euro.Checked   = false;
             checkBox_Gold.Checked   = false;

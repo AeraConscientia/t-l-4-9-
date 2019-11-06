@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Windows.Forms;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace t_l_4
 {
@@ -35,7 +31,6 @@ namespace t_l_4
         {
             InitializeComponent();
         }
-        Account account;
         private void Form1_Load(object sender, EventArgs e) { }
         public void Currency_Input()
         {
@@ -77,29 +72,6 @@ namespace t_l_4
 
         public void Rub_Input()
         {
-
-/*            account = (Account)Base[i];
-            if (account.GetType().Name == "Dollar")
-            {
-                dollars += account.Number();
-                all_rubs += account.To_Rub();
-            }
-            if (account.GetType().Name == "Euro")
-            {
-                euros += account.Number();
-                all_rubs += account.To_Rub();
-            }
-            if (account.GetType().Name == "Rub")
-            {
-                rubs += account.Number();
-                all_rubs += account.To_Rub();
-            }
-            if (account.GetType().Name == "Gold")
-            {
-                gold += account.Number();
-                all_rubs += account.To_Rub();
-            }
-        }*/
         Rubs_Single R_single = new Rubs_Single();
             R_single.ShowDialog();
             if (R_single.listBox_Sur.SelectedItem.ToString() != "")
@@ -125,41 +97,53 @@ namespace t_l_4
         public void Table_Insert(string _Surname, double _dollars, double _euros, double _rubs, double _golds)
         {
             
-            int key = 0;         int index = 0;         int i = 0;
+            int key = 0;    int index = 0;
             foreach (Human _human in Base)
             {
+
                 if ((_human.surname == _Surname))
                 {
-                    if (dataGridView_Total[0, i].Value.ToString() == _Surname)
-                    {
-                        index = i;
-                    }
-                    key = 1;
-                    i += 1;
+
                     _dollars += _human.dollars;     _human.dollars = _dollars;
                     _euros   += _human.euros;       _human.euros   = _euros;
                     _rubs    += _human.rubs;        _human.rubs    = _rubs;
                     _golds   += _human.golds;       _human.golds   = _golds;
 
-                    dataGridView_Total[1, index + 1].Value = _dollars;
-                    dataGridView_Total[2, index + 1].Value = _euros;
-                    dataGridView_Total[3, index + 1].Value = _rubs;
-                    dataGridView_Total[4, index + 1].Value = _golds;
-                    //double z = 
+                    _human.all_in_rubs = (_human.Kurs_dollar*_dollars)+(_human.Kurs_euro*_euros)+(_human.Kurs_gold*_golds)+_human.rubs;
+
+                    for (int j = 0; j < allinbase; j++)
+                    {
+                        if (dataGridView_Total[0, j].Value.ToString() == _Surname)
+                        {
+                            index = j;
+                        }
+                    }
+
+                    dataGridView_Total[1, index].Value = _dollars;
+                    dataGridView_Total[2, index].Value = _euros;
+                    dataGridView_Total[3, index].Value = _rubs;
+                    dataGridView_Total[4, index].Value = _golds;
+                    dataGridView_Total[5, index].Value = _human.all_in_rubs;
+                    key = 1;
                     break;
                 }
             }
             if (key == 0)
             {
-                Human human = new Human(_Surname, _dollars, _euros, _rubs, _golds, all_in_rub);
-                Base.Add(human);
+                Human _human = new Human(_Surname, _dollars, _euros, _rubs, _golds);
+                Base.Add(_human);
+                allinbase++;
+                _human.all_in_rubs = (_human.Kurs_dollar * _dollars) +
+                     (_human.Kurs_euro * _euros) +
+                     (_human.Kurs_gold * _golds) +
+                     _human.rubs;
                 dataGridView_Total.Rows.Insert(0, 1);
                 dataGridView_Total[0, 0].Value = _Surname;  
                 dataGridView_Total[1, 0].Value = _dollars; //all_in_rub += account.To_Rub();
                 dataGridView_Total[2, 0].Value = _euros;
                 dataGridView_Total[3, 0].Value = _rubs;
                 dataGridView_Total[4, 0].Value = _golds;
-                dataGridView_Total[5, 0].Value = all_in_rub;
+                dataGridView_Total[5, 0].Value = _human.all_in_rubs;
 
             }
             //Base.Remove(human);
@@ -187,8 +171,9 @@ namespace t_l_4
         public ArrayList Base = new ArrayList();
         
         string _Surname;
-        double     _dollars = 0,     _euros = 0,     _rubs = 0,     _golds = 0, all_in_rub = 0;
+        double _dollars = 0, _euros = 0, _rubs = 0, _golds = 0;//, all_in_rubs = 0;
         double bank_dollars = 0, bank_euros = 0, bank_rubs = 0, bank_golds = 0;
+        int allinbase = 0;
 
         private void Exit_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
