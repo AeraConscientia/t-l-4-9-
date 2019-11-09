@@ -11,7 +11,7 @@ namespace t_l_4
             InitializeComponent();
         }
         private void Form1_Load(object sender, EventArgs e) { }
-        public void Currency_Input()
+        private void Currency_Input()
         {
             Currency currency = new Currency();
             currency.ShowDialog();
@@ -25,7 +25,7 @@ namespace t_l_4
             }
         }
 
-        public void Dollar_Input()
+        private void Dollar_Input()
         {
             Dollars_Single D_single = new Dollars_Single();
             D_single.ShowDialog();
@@ -37,7 +37,7 @@ namespace t_l_4
             }
         }
 
-        public void Euro_Input()
+        private void Euro_Input()
         {
             Euros_Single E_single = new Euros_Single();
             E_single.ShowDialog();
@@ -49,7 +49,7 @@ namespace t_l_4
             }
         }
                
-        public void Rub_Input()
+        private void Rub_Input()
         {
         Rubs_Single R_single = new Rubs_Single();
             R_single.ShowDialog();
@@ -61,7 +61,7 @@ namespace t_l_4
             }
         }
 
-        public void Gold_Input()
+        private void Gold_Input()
         {
             Golds_Single G_single = new Golds_Single();
             G_single.ShowDialog();
@@ -73,7 +73,7 @@ namespace t_l_4
             }
         }
 
-        public void Table_Insert(string _Surname, double _dollars, double _euros, double _rubs, double _golds)
+        private void Table_Insert(string _Surname, double _dollars, double _euros, double _rubs, double _golds)
         {
             
             int key = 0;    int index = 0;
@@ -118,7 +118,7 @@ namespace t_l_4
                      _human.rubs;
                 dataGridView_Total.Rows.Insert(0, 1);
                 dataGridView_Total[0, 0].Value = _Surname;  
-                dataGridView_Total[1, 0].Value = _dollars; //all_in_rub += account.To_Rub();
+                dataGridView_Total[1, 0].Value = _dollars;
                 dataGridView_Total[2, 0].Value = _euros;
                 dataGridView_Total[3, 0].Value = _rubs;
                 dataGridView_Total[4, 0].Value = _golds;
@@ -126,10 +126,10 @@ namespace t_l_4
 
             }
         } 
-        public ArrayList Base = new ArrayList();
+        private ArrayList Base = new ArrayList();
         
         string _Surname;
-        double _dollars = 0, _euros = 0, _rubs = 0, _golds = 0;//, all_in_rubs = 0;
+        double _dollars = 0, _euros = 0, _rubs = 0, _golds = 0;
         double bank_dollars = 0, bank_euros = 0, bank_rubs = 0, bank_golds = 0;
         int allinbase = 0;
 
@@ -143,37 +143,37 @@ namespace t_l_4
             Currency_Input();
         }
 
-        private void Currency_Dollar_ToolStripMenuItem_Click(object sender, EventArgs e) // Вкладка Доллар
+        private void Currency_Dollar_ToolStripMenuItem_Click(object sender, EventArgs e)    // Вкладка Доллар
         {
             Dollar_Input();
         }
-        private void Currency_Euro_ToolStripMenuItem_Click(object sender, EventArgs e) // Вкладка Евро
+        private void Currency_Euro_ToolStripMenuItem_Click(object sender, EventArgs e)      // Вкладка Евро
         {
             Euro_Input();
         }
-        private void Rub_ToolStripMenuItem_Click(object sender, EventArgs e) // Вкладка Рубли
+        private void Rub_ToolStripMenuItem_Click(object sender, EventArgs e)                // Вкладка Рубли
         {
             Rub_Input();
         }
-        private void Gold_ToolStripMenuItem_Click(object sender, EventArgs e) // вкладка золото
+        private void Gold_ToolStripMenuItem_Click(object sender, EventArgs e)               // вкладка золото
         {
             Gold_Input();
         }
 
 
-        private void toolStripButton_Dollar_Click(object sender, EventArgs e) // иконка Доллары
+        private void toolStripButton_Dollar_Click(object sender, EventArgs e)   // иконка Доллары
         {
             Dollar_Input();
         }
-        private void toolStripButton_Euro_Click(object sender, EventArgs e) // иконка Евро
+        private void toolStripButton_Euro_Click(object sender, EventArgs e)     // иконка Евро
         {
             Euro_Input();
         }
-        private void toolStripButton_Rub_Click(object sender, EventArgs e) // иконка Рубли
+        private void toolStripButton_Rub_Click(object sender, EventArgs e)      // иконка Рубли
         {
             Rub_Input();
         }
-        private void toolStripButton_Gold_Click(object sender, EventArgs e) // иконка золото
+        private void toolStripButton_Gold_Click(object sender, EventArgs e)     // иконка золото
         {
             Gold_Input();
         }

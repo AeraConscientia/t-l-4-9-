@@ -53,43 +53,49 @@
             this.groupBox1.Controls.Add(this.checkBox_Gold);
             this.groupBox1.Controls.Add(this.checkBox_Euro);
             this.groupBox1.Controls.Add(this.checkBox_Dollar);
-            this.groupBox1.Location = new System.Drawing.Point(252, 38);
+            this.groupBox1.Location = new System.Drawing.Point(336, 47);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(289, 164);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(385, 202);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Валюта";
             // 
             // textBox_Gold
             // 
-            this.textBox_Gold.Location = new System.Drawing.Point(76, 117);
+            this.textBox_Gold.Location = new System.Drawing.Point(101, 144);
+            this.textBox_Gold.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox_Gold.Name = "textBox_Gold";
-            this.textBox_Gold.Size = new System.Drawing.Size(188, 20);
+            this.textBox_Gold.Size = new System.Drawing.Size(249, 22);
             this.textBox_Gold.TabIndex = 6;
             this.textBox_Gold.Text = "0";
             // 
             // textBox_Euro
             // 
-            this.textBox_Euro.Location = new System.Drawing.Point(76, 75);
+            this.textBox_Euro.Location = new System.Drawing.Point(101, 92);
+            this.textBox_Euro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox_Euro.Name = "textBox_Euro";
-            this.textBox_Euro.Size = new System.Drawing.Size(188, 20);
+            this.textBox_Euro.Size = new System.Drawing.Size(249, 22);
             this.textBox_Euro.TabIndex = 5;
             this.textBox_Euro.Text = "0";
             // 
             // textBox_Dollar
             // 
-            this.textBox_Dollar.Location = new System.Drawing.Point(76, 33);
+            this.textBox_Dollar.Location = new System.Drawing.Point(101, 41);
+            this.textBox_Dollar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox_Dollar.Name = "textBox_Dollar";
-            this.textBox_Dollar.Size = new System.Drawing.Size(188, 20);
+            this.textBox_Dollar.Size = new System.Drawing.Size(249, 22);
             this.textBox_Dollar.TabIndex = 4;
             this.textBox_Dollar.Text = "0";
             // 
             // checkBox_Gold
             // 
             this.checkBox_Gold.AutoSize = true;
-            this.checkBox_Gold.Location = new System.Drawing.Point(22, 119);
+            this.checkBox_Gold.Location = new System.Drawing.Point(29, 146);
+            this.checkBox_Gold.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox_Gold.Name = "checkBox_Gold";
-            this.checkBox_Gold.Size = new System.Drawing.Size(48, 17);
+            this.checkBox_Gold.Size = new System.Drawing.Size(60, 21);
             this.checkBox_Gold.TabIndex = 3;
             this.checkBox_Gold.Text = "Gold";
             this.checkBox_Gold.UseVisualStyleBackColor = true;
@@ -98,9 +104,10 @@
             // checkBox_Euro
             // 
             this.checkBox_Euro.AutoSize = true;
-            this.checkBox_Euro.Location = new System.Drawing.Point(22, 77);
+            this.checkBox_Euro.Location = new System.Drawing.Point(29, 95);
+            this.checkBox_Euro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox_Euro.Name = "checkBox_Euro";
-            this.checkBox_Euro.Size = new System.Drawing.Size(32, 17);
+            this.checkBox_Euro.Size = new System.Drawing.Size(38, 21);
             this.checkBox_Euro.TabIndex = 2;
             this.checkBox_Euro.Text = "€";
             this.checkBox_Euro.UseVisualStyleBackColor = true;
@@ -109,9 +116,10 @@
             // checkBox_Dollar
             // 
             this.checkBox_Dollar.AutoSize = true;
-            this.checkBox_Dollar.Location = new System.Drawing.Point(22, 35);
+            this.checkBox_Dollar.Location = new System.Drawing.Point(29, 43);
+            this.checkBox_Dollar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox_Dollar.Name = "checkBox_Dollar";
-            this.checkBox_Dollar.Size = new System.Drawing.Size(32, 17);
+            this.checkBox_Dollar.Size = new System.Drawing.Size(38, 21);
             this.checkBox_Dollar.TabIndex = 1;
             this.checkBox_Dollar.Text = "$";
             this.checkBox_Dollar.UseVisualStyleBackColor = true;
@@ -119,19 +127,20 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.очиститьToolStripMenuItem,
             this.Exit_ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(561, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(748, 28);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // очиститьToolStripMenuItem
             // 
             this.очиститьToolStripMenuItem.Name = "очиститьToolStripMenuItem";
-            this.очиститьToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.очиститьToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
             this.очиститьToolStripMenuItem.Text = "Очистить";
             this.очиститьToolStripMenuItem.Click += new System.EventHandler(this.очиститьToolStripMenuItem_Click);
             // 
@@ -139,16 +148,18 @@
             // 
             this.Exit_ToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.Exit_ToolStripMenuItem.Name = "Exit_ToolStripMenuItem";
-            this.Exit_ToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
+            this.Exit_ToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.Exit_ToolStripMenuItem.Text = "Внести и закрыть";
             this.Exit_ToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.listBox_Sur);
-            this.groupBox2.Location = new System.Drawing.Point(20, 38);
+            this.groupBox2.Location = new System.Drawing.Point(27, 47);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(207, 164);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(276, 202);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Фамилия";
@@ -156,25 +167,29 @@
             // listBox_Sur
             // 
             this.listBox_Sur.FormattingEnabled = true;
+            this.listBox_Sur.ItemHeight = 16;
             this.listBox_Sur.Items.AddRange(new object[] {
             "Иванов",
             "Петров",
             "Сидоров"});
-            this.listBox_Sur.Location = new System.Drawing.Point(14, 19);
+            this.listBox_Sur.Location = new System.Drawing.Point(19, 23);
+            this.listBox_Sur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBox_Sur.Name = "listBox_Sur";
-            this.listBox_Sur.Size = new System.Drawing.Size(181, 134);
+            this.listBox_Sur.Size = new System.Drawing.Size(240, 164);
             this.listBox_Sur.TabIndex = 0;
             // 
             // Currency
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(561, 233);
+            this.ClientSize = new System.Drawing.Size(748, 287);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Location = new System.Drawing.Point(975, 0);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Currency";
             this.Text = "Currency";
             this.groupBox1.ResumeLayout(false);
